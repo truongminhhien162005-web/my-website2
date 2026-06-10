@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Đếm số lần click</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding-top: 100px;
+            user-select: none;
+        }
+
+        h1 {
+            font-size: 50px;
+        }
+
+        p {
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Đếm số lần click</h1>
+    <p>Số lần click: <span id="counter">0</span></p>
+
+    <script>
+        let count = 0;
+
+        document.addEventListener("click", function() {
+            count++;
+            document.getElementById("counter").textContent = count;
+        });
+    </script>
+
+</body>
+</html>
